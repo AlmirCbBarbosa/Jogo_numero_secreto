@@ -1,0 +1,75 @@
+@import url(./_reset.css);
+@import url(./_variaveis.css);
+
+.pagina{    
+    background-color: var(--azul);
+    font-family: var(--estiloPadrao);
+    font-size: var(--fonteMedia);     
+}
+
+.conteudoPrincipal {
+    height: 100vh;    
+}
+
+.container{ 
+    background-color: var(--branco);
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px var(--preto);
+    box-sizing: border-box;  
+    color: var(--preto)  ;
+    margin: 50px auto;
+    max-width: 664px;
+    padding-left: 32px;
+    padding-right: 32px;    
+}
+
+.formulario__campo {
+    align-items: flex-start;
+    display: flex;
+    flex-direction:column;
+    border: none;
+    gap: 12px;   
+    padding: 32px 0; 
+}
+
+.formulario__campoTitulo {
+    font-size: var(--titulo2);
+    font-weight: bold;    
+}
+
+.formulario__entrada {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.formulario__etiqueta {
+    font-weight: bold;
+}
+
+.formulario__caixaEntrada {
+    padding: 4px 8px;
+}
+
+.formulario__mensagem {
+    color: var(--branco);    
+}
+
+.formulario__mensagem--vermelho{
+    color: var(--vermelhor)
+}
+
+.formulario__mensagemInformacao {
+    font-weight: bold;
+}
+
+#mensagemInformacao__palpites {    
+    font-weight: normal;
+}
+
+@media screen and (max-width: 480px){
+    .container{
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+}

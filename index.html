@@ -5,9 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Almir de Lima Barbosa">
     <title>Número secreto</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="./css/base/paginaLayout.css">
+    <link rel="stylesheet" href="./css/componentes/botao.css">
+
+
 </head>
-<body>
-    
+<body class="pagina">
+    <main class="conteudoPrincipal">
+        <form class="formulario container">
+            <fieldset class="formulario__campo">
+                <legend class="formulario__campoTitulo">Advinhe o número secreto que esta entre 0 e 100!</legend>
+
+                <div class="formulario__entrada">
+                    <label for="formulario__entradaPalpite" class="formulario__etiqueta">De o seu palpite</label>
+                    <input type="number" max="100" class="formulario__caixaEntrada" id="formulario__entradaPalpite">
+                    <p id="formulario__mensagemErro" class="formulario__mensagem">-</p>
+                </div>
+                <button class="formulario__botao botao" id="formulario__botaoEnviar">Enviar palpite</button>
+                <p class="formulario__mensagemInformacao" id="formulario__Palpites">Palpeites anteriores: <span id="mensagemInformacao__palpites"></span></p>
+            </fieldset>
+        </form>
+    </main>    
     <script type="module" src="./index.js"></script>
 </body>
 </html>

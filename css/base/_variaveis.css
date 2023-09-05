@@ -1,0 +1,15 @@
+:root {
+    --estiloPadrao:'Caveat', cursive; 
+
+    --preto: #464646;
+    --preto50: #A2A2A2;
+    --preto05: #F5F5F5;
+    --azul: #2A7AE4;
+    --azul80: #5595E9;
+    --vermelho: #FF0000;
+    --branco: #FFF;
+
+    --titulo1:52px;
+    --titulo2:32px;
+    --fonteMedia: 16px; 
+}
